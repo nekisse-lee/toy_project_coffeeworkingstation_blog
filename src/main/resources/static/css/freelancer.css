@@ -2256,13 +2256,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #493e35;
+  border-color: #493e35;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #159a80;
+  background-color: #a08976;
   border-color: #148f77;
 }
 
@@ -6205,17 +6205,17 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #1abc9c !important;
+  background-color: #493e35 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #148f77 !important;
+  background-color: #a08976 !important;
 }
 
 .bg-secondary {
-  background-color: #2c3e50 !important;
+  background-color: #105a4b !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -9606,8 +9606,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .btn-xl {
-  padding: 1rem 1.75rem;
-  font-size: 1.25rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
 }
 
 .btn-social {
@@ -9654,7 +9654,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #a08976;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -9700,10 +9700,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
-}
+
 
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -9752,7 +9749,7 @@ a.text-dark:hover, a.text-dark:focus {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(160, 137, 118, 0.9);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -9782,7 +9779,7 @@ a.text-dark:hover, a.text-dark:focus {
   top: 1rem;
   font-size: 3rem;
   line-height: 3rem;
-  color: #1abc9c;
+  color: #a08976;
   opacity: 1;
 }
 
@@ -9840,10 +9837,55 @@ form .row:first-child .floating-label-form-group {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
+  background-color: #105a4b;
   color: #fff;
 }
 
 .copyright {
   background-color: #1a252f;
+}
+
+
+/* custom */
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('https://scontent-icn1-1.cdninstagram.com/vp/bcdb5032da1ea9b8013827d4b0a8fe93/5E67ECEC/t51.2885-19/s150x150/71701470_246295796317340_4577642475551719424_n.jpg?_nc_ht=scontent-icn1-1.cdninstagram.com');
+  /*background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('bg-masthead.png');*/
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+}
+
+#BtMenu {
+  background-color: #856404;
 }
