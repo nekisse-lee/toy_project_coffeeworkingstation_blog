@@ -9847,6 +9847,9 @@ form .row:first-child .floating-label-form-group {
 
 
 /* custom */
+/* custom */
+/* custom */
+/* custom */
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
@@ -9888,4 +9891,9 @@ header.masthead h1 {
 
 #BtMenu {
   background-color: #856404;
+}
+
+#instagramImg {
+  color: #105a4b;
+  border-color: #105a4b;
 }
