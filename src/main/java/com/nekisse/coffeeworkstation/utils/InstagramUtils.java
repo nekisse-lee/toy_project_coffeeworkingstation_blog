@@ -19,6 +19,7 @@ import java.util.List;
 public class InstagramUtils {
 
     private static final String USER_INSTAGRAM_URL = "https://www.instagram.com/jami__anwa/";
+//    private static final String USER_INSTAGRAM_URL = "https://www.instagram.com/p/B5Y9hHmHdhj/";
     public static final int SET_IMG_COUNT = 4;
 
     public static List<InstaDomain> getInstaImgAndDesc() throws IOException {
@@ -30,17 +31,6 @@ public class InstagramUtils {
 
         JsonReader reader = new JsonReader(new StringReader(substring));
         System.out.println("substring = " + substring);
-//        System.out.println("reader = " + reader.toString());
-//        reader.setLenient(true);
-//        System.out.println("reader = " + reader);
-
-//        JsonParser jsonParser = new JsonParser();
-//        JsonObject parse = (JsonObject) jsonParser.parse(reader);
-//        System.out.println("parse = " + parse);
-
-//        JsonElement entry_data = parse.get("entry_data");
-//        System.out.println("entry_data = " + entry_data);
-
 
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode jsonNode = objectMapper.readTree(substring);
