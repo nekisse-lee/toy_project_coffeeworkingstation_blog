@@ -46,8 +46,11 @@ public class InstagramUtils {
         for (int i = 0; i < SET_IMG_COUNT; i++) {
             JsonNode jsonNode1 = node.get(i);
 
+            String desc = String.valueOf(jsonNode1.get("edge_media_to_caption").findValue("text"));
+            String replace1 = desc.replace("\"", "");
+            String replace = replace1.replace("\\n", " <br/>");
             InstaDomain edge_media_to_caption = InstaDomain.builder()
-                    .desc(String.valueOf(jsonNode1.get("edge_media_to_caption").findValue("text")))
+                    .desc(replace)
                     .imgUrl(String.valueOf(jsonNode1.get("display_url")))
                     .build();
 
