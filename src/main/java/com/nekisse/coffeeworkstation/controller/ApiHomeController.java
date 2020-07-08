@@ -19,6 +19,7 @@ import static com.nekisse.coffeeworkstation.utils.InstagramUtils.getInstaImgAndD
 public class ApiHomeController {
 
 
+
     @GetMapping("")
     public @ResponseBody String home3() throws IOException {
         Map<String, String> stringStringMap = new HashMap<>();
